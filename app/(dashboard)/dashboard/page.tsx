@@ -3,6 +3,8 @@ import { redirect } from 'next/navigation';
 import { Package } from 'lucide-react';
 import Link from 'next/link';
 
+export const runtime = 'edge';
+
 export default async function DashboardPage() {
   const user = await currentUser();
   if (!user) redirect('/sign-in');

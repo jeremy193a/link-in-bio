@@ -4,6 +4,8 @@ import { ProductForm } from '@/components/dashboard/ProductForm';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
+export const runtime = 'edge';
+
 export default async function NewProductPage() {
   const user = await currentUser();
 

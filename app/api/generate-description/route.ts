@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { generateProductDescription } from '@/lib/ai';
 import { APIResponse, GenerateDescriptionRequest } from '@/types';
 
+export const runtime = 'edge';
+
 export async function POST(request: NextRequest) {
   try {
     // Check authentication
